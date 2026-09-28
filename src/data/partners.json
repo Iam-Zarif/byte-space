@@ -1,1 +1,22 @@
-[]
+[
+	{
+		"name": "Google",
+		"image": "/partners/image-1.svg"
+	},
+	{
+		"name": "Microsoft",
+		"image": "/partners/image-2.svg"
+	},
+	{
+		"name": "Amazon",
+		"image": "/partners/image-3.svg"
+	},
+	{
+		"name": "Meta",
+		"image": "/partners/image-4.svg"
+	},
+	{
+		"name": "Spotify",
+		"image": "/partners/image-5.svg"
+	}
+]

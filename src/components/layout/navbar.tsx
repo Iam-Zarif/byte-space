@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FiShoppingBag } from "react-icons/fi";
-import { NAV_LINKS } from "@/src/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 import { MobileNav } from "./mobile-nav";
 
 export function Navbar() {

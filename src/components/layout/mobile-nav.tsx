@@ -3,7 +3,7 @@
 import Link from "next/link";
 import { useEffect, useState } from "react";
 import { FiMenu, FiShoppingBag, FiX } from "react-icons/fi";
-import { NAV_LINKS } from "@/src/lib/constants";
+import { NAV_LINKS } from "@/lib/constants";
 
 export function MobileNav() {
 	const [isOpen, setIsOpen] = useState(false);
@@ -45,7 +45,7 @@ export function MobileNav() {
 				<nav
 					id="mobile-navigation"
 					aria-label="Mobile navigation"
-					className="absolute inset-x-5 top-[76px] rounded-2xl border border-white/15 bg-primary/95 p-5 shadow-2xl backdrop-blur-md sm:inset-x-6"
+					className="absolute inset-x-5 top-19 rounded-2xl border border-white/15 bg-primary/95 p-5 shadow-2xl backdrop-blur-md sm:inset-x-6"
 				>
 					<ul className="space-y-1">
 						{NAV_LINKS.map((item) => (
