@@ -1,0 +1,32 @@
+[
+	{
+		"id": "design",
+		"name": "Design",
+		"icon": "/icons/categories/design.svg"
+	},
+	{
+		"id": "development",
+		"name": "Development",
+		"icon": "/icons/categories/development.svg"
+	},
+	{
+		"id": "it-software",
+		"name": "IT & Software",
+		"icon": "/icons/categories/it-software.svg"
+	},
+	{
+		"id": "business",
+		"name": "Business",
+		"icon": "/icons/categories/business.svg"
+	},
+	{
+		"id": "marketing",
+		"name": "Marketing",
+		"icon": "/icons/categories/marketing.svg"
+	},
+	{
+		"id": "photography",
+		"name": "Photography",
+		"icon": "/icons/categories/photography.svg"
+	}
+]
