@@ -4,7 +4,7 @@
 		"slug": "learn-figma-from-basic",
 		"title": "Learn Figma from Basic",
 		"creator": "purepearl studio",
-		"image": "/courses/course-01.webp",
+		"image": "/courses/Frame.svg",
 		"category": "UI/UX Design",
 		"lessons": 17,
 		"duration": "2 hours 16 mins",
@@ -15,10 +15,10 @@
 		"billingLabel": "lifetime",
 		"featured": true,
 		"students": [
-			"/avatars/student-01.webp",
-			"/avatars/student-02.webp",
-			"/avatars/student-03.webp",
-			"/avatars/student-04.webp"
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
 		],
 		"extraStudents": 26
 	},
@@ -27,7 +27,7 @@
 		"slug": "build-digital-asset",
 		"title": "Build Digital Asset",
 		"creator": "purepearl studio",
-		"image": "/courses/course-02.webp",
+		"image": "/courses/Frame (1).svg",
 		"category": "Design",
 		"lessons": 17,
 		"duration": "2 hours 16 mins",
@@ -38,10 +38,10 @@
 		"billingLabel": "lifetime",
 		"featured": true,
 		"students": [
-			"/avatars/student-01.webp",
-			"/avatars/student-02.webp",
-			"/avatars/student-03.webp",
-			"/avatars/student-04.webp"
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
 		],
 		"extraStudents": 26
 	},
@@ -50,7 +50,7 @@
 		"slug": "the-power-of-big-data",
 		"title": "the Power of Big Data",
 		"creator": "purepearl studio",
-		"image": "/courses/course-03.webp",
+		"image": "/courses/Frame (2).svg",
 		"category": "Data Science",
 		"lessons": 17,
 		"duration": "2 hours 16 mins",
@@ -61,10 +61,10 @@
 		"billingLabel": "lifetime",
 		"featured": true,
 		"students": [
-			"/avatars/student-01.webp",
-			"/avatars/student-02.webp",
-			"/avatars/student-03.webp",
-			"/avatars/student-04.webp"
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
 		],
 		"extraStudents": 26
 	},
@@ -73,7 +73,7 @@
 		"slug": "balancing-productivity-and-creativity",
 		"title": "Balancing Productivity and Creativity",
 		"creator": "purepearl studio",
-		"image": "/courses/course-04.webp",
+		"image": "/courses/Frame (3).svg",
 		"category": "Productivity",
 		"lessons": 17,
 		"duration": "2 hours 16 mins",
@@ -84,10 +84,10 @@
 		"billingLabel": "lifetime",
 		"featured": true,
 		"students": [
-			"/avatars/student-01.webp",
-			"/avatars/student-02.webp",
-			"/avatars/student-03.webp",
-			"/avatars/student-04.webp"
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
 		],
 		"extraStudents": 26
 	},
@@ -96,7 +96,7 @@
 		"slug": "mastering-money-management",
 		"title": "Mastering Money Management",
 		"creator": "purepearl studio",
-		"image": "/courses/course-05.webp",
+		"image": "/courses/Frame (4).svg",
 		"category": "Finance",
 		"lessons": 17,
 		"duration": "2 hours 16 mins",
@@ -107,10 +107,10 @@
 		"billingLabel": "lifetime",
 		"featured": true,
 		"students": [
-			"/avatars/student-01.webp",
-			"/avatars/student-02.webp",
-			"/avatars/student-03.webp",
-			"/avatars/student-04.webp"
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
 		],
 		"extraStudents": 26
 	},
@@ -119,7 +119,7 @@
 		"slug": "from-idea-to-startup-success",
 		"title": "From Idea to Startup Success",
 		"creator": "purepearl studio",
-		"image": "/courses/course-06.webp",
+		"image": "/courses/Frame (5).svg",
 		"category": "Business",
 		"lessons": 17,
 		"duration": "2 hours 16 mins",
@@ -130,10 +130,10 @@
 		"billingLabel": "lifetime",
 		"featured": true,
 		"students": [
-			"/avatars/student-01.webp",
-			"/avatars/student-02.webp",
-			"/avatars/student-03.webp",
-			"/avatars/student-04.webp"
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
 		],
 		"extraStudents": 26
 	}
