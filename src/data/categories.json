@@ -1,32 +1,26 @@
 [
 	{
-		"id": "design",
 		"name": "Design",
-		"icon": "/icons/categories/design.svg"
+		"icon": "design"
 	},
 	{
-		"id": "development",
 		"name": "Development",
-		"icon": "/icons/categories/development.svg"
+		"icon": "development"
 	},
 	{
-		"id": "it-software",
 		"name": "IT & Software",
-		"icon": "/icons/categories/it-software.svg"
+		"icon": "software"
 	},
 	{
-		"id": "business",
 		"name": "Business",
-		"icon": "/icons/categories/business.svg"
+		"icon": "business"
 	},
 	{
-		"id": "marketing",
 		"name": "Marketing",
-		"icon": "/icons/categories/marketing.svg"
+		"icon": "marketing"
 	},
 	{
-		"id": "photography",
 		"name": "Photography",
-		"icon": "/icons/categories/photography.svg"
+		"icon": "photography"
 	}
 ]

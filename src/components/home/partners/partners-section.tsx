@@ -9,10 +9,7 @@ export function PartnersSection() {
 		>
 			<div className="mx-auto flex max-w-300 flex-wrap items-center justify-center gap-x-12 gap-y-8 lg:justify-between lg:gap-0">
 				{partners.map((partner) => (
-					<div
-						key={partner.name}
-						className="flex items-center gap-2"
-					>
+					<div key={partner.name} className="flex items-center gap-2">
 						<Image
 							src={partner.image}
 							alt=""
