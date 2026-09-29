@@ -1,0 +1,140 @@
+[
+	{
+		"id": "course-01",
+		"slug": "learn-figma-from-basic",
+		"title": "Learn Figma from Basic",
+		"creator": "purepearl studio",
+		"image": "/courses/Frame.svg",
+		"category": "UI/UX Design",
+		"lessons": 17,
+		"duration": "2 hours 16 mins",
+		"comments": 59,
+		"level": "Beginner",
+		"rating": 4.5,
+		"price": 25,
+		"billingLabel": "lifetime",
+		"featured": true,
+		"students": [
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
+		],
+		"extraStudents": 26
+	},
+	{
+		"id": "course-02",
+		"slug": "build-digital-asset",
+		"title": "Build Digital Asset",
+		"creator": "purepearl studio",
+		"image": "/courses/Frame (1).svg",
+		"category": "Design",
+		"lessons": 17,
+		"duration": "2 hours 16 mins",
+		"comments": 59,
+		"level": "Beginner",
+		"rating": 4.5,
+		"price": 25,
+		"billingLabel": "lifetime",
+		"featured": true,
+		"students": [
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
+		],
+		"extraStudents": 26
+	},
+	{
+		"id": "course-03",
+		"slug": "the-power-of-big-data",
+		"title": "the Power of Big Data",
+		"creator": "purepearl studio",
+		"image": "/courses/Frame (2).svg",
+		"category": "Data Science",
+		"lessons": 17,
+		"duration": "2 hours 16 mins",
+		"comments": 59,
+		"level": "Beginner",
+		"rating": 4.5,
+		"price": 25,
+		"billingLabel": "lifetime",
+		"featured": true,
+		"students": [
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
+		],
+		"extraStudents": 26
+	},
+	{
+		"id": "course-04",
+		"slug": "balancing-productivity-and-creativity",
+		"title": "Balancing Productivity and Creativity",
+		"creator": "purepearl studio",
+		"image": "/courses/Frame (3).svg",
+		"category": "Productivity",
+		"lessons": 17,
+		"duration": "2 hours 16 mins",
+		"comments": 59,
+		"level": "Beginner",
+		"rating": 4.5,
+		"price": 25,
+		"billingLabel": "lifetime",
+		"featured": true,
+		"students": [
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
+		],
+		"extraStudents": 26
+	},
+	{
+		"id": "course-05",
+		"slug": "mastering-money-management",
+		"title": "Mastering Money Management",
+		"creator": "purepearl studio",
+		"image": "/courses/Frame (4).svg",
+		"category": "Finance",
+		"lessons": 17,
+		"duration": "2 hours 16 mins",
+		"comments": 59,
+		"level": "Beginner",
+		"rating": 4.5,
+		"price": 25,
+		"billingLabel": "lifetime",
+		"featured": true,
+		"students": [
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
+		],
+		"extraStudents": 26
+	},
+	{
+		"id": "course-06",
+		"slug": "from-idea-to-startup-success",
+		"title": "From Idea to Startup Success",
+		"creator": "purepearl studio",
+		"image": "/courses/Frame (5).svg",
+		"category": "Business",
+		"lessons": 17,
+		"duration": "2 hours 16 mins",
+		"comments": 59,
+		"level": "Beginner",
+		"rating": 4.5,
+		"price": 25,
+		"billingLabel": "lifetime",
+		"featured": true,
+		"students": [
+			"/avatars/student-(2).svg",
+			"/avatars/student-(3).svg",
+			"/avatars/student-(4).svg",
+			"/avatars/student-(5).svg"
+		],
+		"extraStudents": 26
+	}
+]
