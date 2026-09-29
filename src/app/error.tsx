@@ -1,10 +1,7 @@
 "use client";
 
 import { FiRefreshCw } from "react-icons/fi";
-
-type ErrorPageProps = {
-	reset: () => void;
-};
+import type { ErrorPageProps } from "@/types/components";
 
 export default function ErrorPage({ reset }: ErrorPageProps) {
 	return (

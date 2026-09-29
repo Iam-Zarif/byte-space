@@ -1,7 +1,7 @@
-import type { Testimonial } from "@/data/testimonials";
+import type { TestimonialCardProps } from "@/types/components";
 import { TestimonialAvatar } from "./testimonial-avatar";
 
-export function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
+export function TestimonialCard({ testimonial }: TestimonialCardProps) {
 	return (
 		<figure className="rounded-3xl bg-white p-6">
 			<figcaption>

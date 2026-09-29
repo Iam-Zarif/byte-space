@@ -2,8 +2,7 @@
 
 import Image from "next/image";
 import { useImageLoad } from "@/hooks/use-image-load";
-
-type TestimonialAvatarProps = { src: string; name: string };
+import type { TestimonialAvatarProps } from "@/types/components";
 
 export function TestimonialAvatar({ src, name }: TestimonialAvatarProps) {
 	const { status, onLoad, onError } = useImageLoad();

@@ -1,11 +1,6 @@
 import Image from "next/image";
-export function StudentStack({
-	students,
-	extra,
-}: {
-	students: string[];
-	extra: number;
-}) {
+import type { StudentStackProps } from "@/types/components";
+export function StudentStack({ students, extra }: StudentStackProps) {
 	return (
 		<div className="flex items-center" title={`${extra} more students`}>
 			{students.map((src, index) => (

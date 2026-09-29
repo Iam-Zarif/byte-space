@@ -1,10 +1,10 @@
 import { FaStar } from "react-icons/fa";
-import type { Course } from "@/types/content";
+import type { CourseCardProps } from "@/types/components";
 import { CourseImage } from "./course-image";
 import { CourseMeta } from "./course-meta";
-export function CourseCard({ course }: { course: Course }) {
+export function CourseCard({ course }: CourseCardProps) {
 	return (
-		<article className="min-w-0 rounded-[24px] border border-gray-200 bg-white p-[15px] text-black">
+		<article className="min-w-0 rounded-3xl border border-gray-200 bg-white p-3.75 text-black">
 			<CourseImage key={course.image} src={course.image} title={course.title} />
 			<div className="mt-5 flex items-center gap-3">
 				<h3

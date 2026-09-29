@@ -2,7 +2,8 @@
 import Image from "next/image";
 import { FiImage } from "react-icons/fi";
 import { useImageLoad } from "@/hooks/use-image-load";
-export function CourseImage({ src, title }: { src: string; title: string }) {
+import type { CourseImageProps } from "@/types/components";
+export function CourseImage({ src, title }: CourseImageProps) {
 	const { status, onLoad, onError } = useImageLoad();
 	return (
 		<div

@@ -1,17 +1,7 @@
 import Link from "next/link";
-import type { ReactNode } from "react";
 import { FaFacebook, FaGoogle } from "react-icons/fa";
+import type { AuthFormCardProps } from "@/types/components";
 import { AuthField } from "./auth-field";
-
-type AuthFormCardProps = {
-	mode: "login" | "register";
-	eyebrow: string;
-	title: ReactNode;
-	buttonLabel: string;
-	footerText: string;
-	footerLinkLabel: string;
-	footerHref: string;
-};
 
 export function AuthFormCard({
 	mode,
@@ -25,7 +15,7 @@ export function AuthFormCard({
 	const isLogin = mode === "login";
 
 	return (
-		<div className="flex min-h-[680px] w-full max-w-[580px] flex-col rounded-[28px] bg-white px-7 py-10 text-gray-950 shadow-[0_24px_70px_rgb(0_0_0/0.12)] sm:px-14 sm:py-16 lg:min-h-[784px] lg:px-16">
+		<div className="flex min-h-170 w-full max-w-145 flex-col rounded-[28px] bg-white px-7 py-10 text-gray-950 shadow-[0_24px_70px_rgb(0_0_0/0.12)] sm:px-14 sm:py-16 lg:min-h-196 lg:px-16">
 			<p className="font-body text-[18px] text-primary">{eyebrow}</p>
 			<h2 className="mt-1 font-heading font-semibold text-[42px] leading-[1.2] tracking-[-1.8px] sm:text-[46px]">
 				{title}
@@ -60,7 +50,7 @@ export function AuthFormCard({
 				<div className="mt-6 flex justify-end">
 					<button
 						type="submit"
-						className="min-w-[104px] rounded-full bg-lime px-7 py-3 font-body font-medium text-[18px] text-black transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
+						className="min-w-26 rounded-full bg-lime px-7 py-3 font-body font-medium text-[18px] text-black transition hover:brightness-95 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-primary focus-visible:ring-offset-2"
 					>
 						{buttonLabel}
 					</button>
@@ -78,14 +68,14 @@ export function AuthFormCard({
 						<button
 							type="button"
 							aria-label="Continue with Facebook"
-							className="grid size-[72px] place-items-center rounded-[22px] border border-gray-200 text-black hover:bg-gray-50"
+							className="grid size-18 place-items-center rounded-[22px] border border-gray-200 text-black hover:bg-gray-50"
 						>
 							<FaFacebook size={36} aria-hidden="true" />
 						</button>
 						<button
 							type="button"
 							aria-label="Continue with Google"
-							className="grid size-[72px] place-items-center rounded-[22px] border border-gray-200 text-black hover:bg-gray-50"
+							className="grid size-18 place-items-center rounded-[22px] border border-gray-200 text-black hover:bg-gray-50"
 						>
 							<FaGoogle size={31} aria-hidden="true" />
 						</button>

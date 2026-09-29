@@ -1,14 +1,11 @@
+import type { RevenueCardProps } from "@/types/components";
+
 export function RevenueCard({
 	title,
 	period,
 	amount,
 	compact = false,
-}: {
-	title: string;
-	period: string;
-	amount: string;
-	compact?: boolean;
-}) {
+}: RevenueCardProps) {
 	return (
 		<div className="rounded-2xl bg-primary p-4 text-white">
 			<p className="text-sm">{title}</p>

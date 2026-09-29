@@ -1,6 +1,6 @@
-import type { Course } from "@/types/content";
+import type { CourseGridProps } from "@/types/components";
 import { CourseCard } from "./course-card";
-export function CourseGrid({ courses }: { courses: Course[] }) {
+export function CourseGrid({ courses }: CourseGridProps) {
 	if (!courses.length)
 		return (
 			<p role="status" className="py-16 text-center text-gray-400">

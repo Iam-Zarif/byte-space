@@ -1,22 +1,15 @@
 import { FiMinus, FiPlus } from "react-icons/fi";
-
-type Props = {
-	categories: string[];
-	selected: string;
-	expanded: boolean;
-	onSelect: (category: string) => void;
-	onToggle: () => void;
-};
+import type { CourseFiltersProps } from "@/types/components";
 export function CourseFilters({
 	categories,
 	selected,
 	expanded,
 	onSelect,
 	onToggle,
-}: Props) {
+}: CourseFiltersProps) {
 	return (
 		<fieldset
-			className="mx-auto mb-[76px] flex max-w-[1100px] flex-wrap justify-center gap-4"
+			className="mx-auto mb-19 flex max-w-275 flex-wrap justify-center gap-4"
 			aria-label="Course categories"
 		>
 			{categories
@@ -27,7 +20,7 @@ export function CourseFilters({
 						type="button"
 						aria-pressed={selected === category}
 						onClick={() => onSelect(category)}
-						className={`rounded-full px-[18px] py-3 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 ${selected === category ? "bg-lime text-black" : "bg-gray-50 text-gray-700 hover:bg-gray-100"}`}
+						className={`rounded-full px-4.5 py-3 text-sm transition-colors focus-visible:outline-2 focus-visible:outline-primary focus-visible:outline-offset-2 ${selected === category ? "bg-lime text-black" : "bg-gray-50 text-gray-700 hover:bg-gray-100"}`}
 					>
 						{category}
 					</button>

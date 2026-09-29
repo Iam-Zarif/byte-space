@@ -1,6 +1,6 @@
 import { FaCheckCircle } from "react-icons/fa";
+import { SectionHeading } from "@/components/ui/section-heading";
 import { CreatorVisual } from "./creator-visual";
-import { FeatureBlock } from "./feature-block";
 import { GrowthVisual } from "./growth-visual";
 
 const benefits = [
@@ -21,14 +21,13 @@ export function PlatformShowcaseSection() {
 			}}
 		>
 			<div className="mx-auto grid max-w-[1200px] items-center gap-x-16 gap-y-12 md:grid-cols-2">
-				<FeatureBlock title="Your Path to Professional Growth Starts Here!">
-					<p className="max-w-[430px] text-base text-gray-700 leading-7">
-						Explore our curated selection of courses tailored to enhance your
-						capabilities and accelerate your career journey. Whether you are
-						looking to sharpen specific skills, gain industry expertise, or
-						embark on a new career path entirely, we have the resources you
-						need.
-					</p>
+				<div className="max-w-127.5">
+					<SectionHeading
+						title="Your Path to Professional Growth Starts Here!"
+						description="Explore our curated selection of courses tailored to enhance your capabilities and accelerate your career journey. Whether you are looking to sharpen specific skills, gain industry expertise, or embark on a new career path entirely, we have the resources you need."
+						titleClassName="mb-8 font-bold text-3xl leading-[1.15] tracking-[-1px] sm:text-[40px]"
+						descriptionClassName="max-w-[430px] text-left text-base text-gray-700 leading-7"
+					/>
 					<dl className="mt-10 flex gap-12">
 						{[
 							["12K", "Students"],
@@ -41,17 +40,24 @@ export function PlatformShowcaseSection() {
 							</div>
 						))}
 					</dl>
-				</FeatureBlock>
+				</div>
 				<GrowthVisual />
 				<div className="order-4 md:order-none">
 					<CreatorVisual />
 				</div>
-				<FeatureBlock title="Create & Manage Courses Easily.">
-					<p className="text-base text-gray-700 leading-7">
-						<strong className="text-gray-950">ByteSpace</strong> supports
-						individuals or entities in the creation, publication, and
-						administration of educational courses.
-					</p>
+				<div className="max-w-127.5">
+					<SectionHeading
+						title="Create & Manage Courses Easily."
+						description={
+							<>
+								<strong className="text-gray-950">ByteSpace</strong> supports
+								individuals or entities in the creation, publication, and
+								administration of educational courses.
+							</>
+						}
+						titleClassName="mb-8 font-bold text-3xl leading-[1.15] tracking-[-1px] sm:text-[40px]"
+						descriptionClassName="text-left text-base text-gray-700 leading-7"
+					/>
 					<ul className="mt-8 space-y-3">
 						{benefits.map((benefit) => (
 							<li key={benefit} className="flex items-center gap-2 text-base">
@@ -63,7 +69,7 @@ export function PlatformShowcaseSection() {
 							</li>
 						))}
 					</ul>
-				</FeatureBlock>
+				</div>
 			</div>
 		</section>
 	);

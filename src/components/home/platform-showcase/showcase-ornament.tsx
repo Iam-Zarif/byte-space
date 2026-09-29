@@ -1,5 +1,6 @@
 import Image from "next/image";
-export function ShowcaseOrnament({ className }: { className: string }) {
+import type { ShowcaseOrnamentProps } from "@/types/components";
+export function ShowcaseOrnament({ className }: ShowcaseOrnamentProps) {
 	return (
 		<Image
 			src="/hero/ornament-white-small.svg"

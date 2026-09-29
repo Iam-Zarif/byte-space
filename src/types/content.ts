@@ -16,3 +16,16 @@ export type Course = {
 	students: string[];
 	extraStudents: number;
 };
+
+export type Testimonial = {
+	id: string;
+	name: string;
+	role: string;
+	avatar: string;
+	quote: string;
+};
+
+export type LearningCategory = {
+	name: string;
+	icon: string;
+};

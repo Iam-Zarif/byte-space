@@ -1,10 +1,4 @@
-type AuthFieldProps = {
-	id: string;
-	label: string;
-	type?: "text" | "email" | "password";
-	placeholder: string;
-	autoComplete: string;
-};
+import type { AuthFieldProps } from "@/types/components";
 
 export function AuthField({
 	id,
@@ -23,7 +17,7 @@ export function AuthField({
 				required
 				autoComplete={autoComplete}
 				placeholder={placeholder}
-				className="mt-2 h-[53px] w-full rounded-[12px] border border-gray-200 bg-white px-6 font-body text-base outline-none transition placeholder:text-gray-400 focus:border-primary focus:ring-2 focus:ring-primary/15"
+				className="mt-2 h-13.25 w-full rounded-xl border border-gray-200 bg-white px-6 font-body text-base outline-none transition placeholder:text-gray-400 focus:border-primary focus:ring-2 focus:ring-primary/15"
 			/>
 		</label>
 	);

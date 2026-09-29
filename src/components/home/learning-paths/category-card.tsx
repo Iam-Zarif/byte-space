@@ -1,5 +1,6 @@
 import Image from "next/image";
 import { RiSignalTowerFill } from "react-icons/ri";
+import type { CategoryCardProps } from "@/types/components";
 
 const ICONS: Record<string, string> = {
 	design: "/features/Frame.svg",
@@ -8,8 +9,6 @@ const ICONS: Record<string, string> = {
 	business: "/features/Style=Round.svg",
 	photography: "/features/Style=Outlined.svg",
 };
-
-type CategoryCardProps = { name: string; icon: string };
 
 export function CategoryCard({ name, icon }: CategoryCardProps) {
 	const src = ICONS[icon];

@@ -1,11 +1,5 @@
 import Image from "next/image";
-
-type OrnamentProps = {
-	src: string;
-	width: number;
-	height: number;
-	className: string;
-};
+import type { OrnamentProps } from "@/types/components";
 
 export function Ornament({ src, width, height, className }: OrnamentProps) {
 	return (
@@ -14,7 +8,7 @@ export function Ornament({ src, width, height, className }: OrnamentProps) {
 			alt=""
 			width={width}
 			height={height}
-			style={{ height: "auto" }}
+			style={{ width: "auto", height: "auto" }}
 			aria-hidden="true"
 			className={`pointer-events-none absolute select-none ${className}`}
 		/>

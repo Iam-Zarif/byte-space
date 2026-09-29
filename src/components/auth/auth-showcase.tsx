@@ -1,15 +1,10 @@
 import Image from "next/image";
 import { FaChartSimple, FaStar } from "react-icons/fa6";
+import type { MiniCourseCardProps } from "@/types/components";
 
 const students = [1, 2, 3, 4, 5] as const;
 
-function MiniCourseCard({
-	className,
-	featured = false,
-}: {
-	className: string;
-	featured?: boolean;
-}) {
+function MiniCourseCard({ className, featured = false }: MiniCourseCardProps) {
 	return (
 		<article
 			className={`absolute rounded-[25px] bg-white p-4 text-black shadow-[0_18px_45px_rgb(0_0_0/0.16)] ${className}`}
@@ -78,10 +73,7 @@ export function AuthShowcase() {
 	return (
 		<div aria-hidden="true" className="absolute inset-x-0 bottom-0 h-155">
 			<MiniCourseCard className="top-45 left-0 z-10 w-92.5 opacity-95" />
-			<MiniCourseCard
-				featured
-				className="top-22.5 left-28 z-20 w-93.75"
-			/>
+			<MiniCourseCard featured className="top-22.5 left-28 z-20 w-93.75" />
 			<Image
 				src="/hero/ornament-ring.svg"
 				alt=""

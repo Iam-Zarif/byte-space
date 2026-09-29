@@ -1,12 +1,5 @@
 import Link from "next/link";
-
-type FooterLinkGroupProps = {
-	label: string;
-	links: readonly {
-		label: string;
-		href: string;
-	}[];
-};
+import type { FooterLinkGroupProps } from "@/types/components";
 
 export function FooterLinkGroup({ label, links }: FooterLinkGroupProps) {
 	return (

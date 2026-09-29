@@ -1,3 +1,4 @@
+import { SectionHeading } from "@/components/ui/section-heading";
 import { testimonials } from "@/data/testimonials";
 import { TestimonialCard } from "./testimonial-card";
 
@@ -12,21 +13,14 @@ export function TestimonialsSection() {
 			}}
 		>
 			<div className="mx-auto max-w-300">
-				<div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-10">
-					<h2
-						id="testimonials-heading"
-						className="max-w-130 font-bold text-3xl text-black leading-[1.12] tracking-[-1px] sm:text-[44px]"
-					>
-						Discover What Our Community Is Saying
-					</h2>
-					<p className="font-body text-gray-700 text-lg leading-7.25">
-						At ByteSpace, our vibrant community of learners and creators is at
-						the heart of what we do. Hear directly from those who have
-						experienced the transformative journey of learning and creating on
-						our platform. Explore testimonials that reflect the diverse
-						perspectives of enthusiastic learners and accomplished creators.
-					</p>
-				</div>
+				<SectionHeading
+					id="testimonials-heading"
+					layout="split"
+					title="Discover What Our Community Is Saying"
+					description="At ByteSpace, our vibrant community of learners and creators is at the heart of what we do. Hear directly from those who have experienced the transformative journey of learning and creating on our platform. Explore testimonials that reflect the diverse perspectives of enthusiastic learners and accomplished creators."
+					titleClassName="max-w-130 font-bold text-3xl text-black leading-[1.12] tracking-[-1px] sm:text-[44px]"
+					descriptionClassName="font-body text-gray-700 text-lg leading-7.25"
+				/>
 				<div className="mt-12 grid items-start gap-6 md:grid-cols-2 lg:mt-18 lg:grid-cols-3 lg:gap-10">
 					{testimonials.map((testimonial) => (
 						<TestimonialCard key={testimonial.id} testimonial={testimonial} />
