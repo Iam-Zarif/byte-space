@@ -39,10 +39,10 @@ export function HeroOrnaments() {
 			/>
 
 			<Ornament
-				src="/hero/ornament-white-right.svg"
+				src="/hero/ornament-white-small.svg"
 				width={330}
 				height={330}
-				className="top-168 -right-4.25 hidden lg:block"
+				className="top-168 -right-4.25 hidden rotate-180 lg:block"
 			/>
 		</>
 	);

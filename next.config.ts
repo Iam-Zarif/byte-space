@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
 				"/avatars/:path*",
 				"/women.svg",
 				"/features/:path*",
+				"/testimonials/:path*",
 			].map((source) => ({
 				source,
 				headers: [

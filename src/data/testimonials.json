@@ -3,21 +3,21 @@
 		"id": "testimonial-01",
 		"name": "Sarah M.",
 		"role": "Enthusiastic Learner",
-		"avatar": "/testimonials/sarah.webp",
+		"avatar": "/avatars/Ellipse.svg",
 		"quote": "ByteSpace has transformed my approach to learning. The diverse range of courses and the quality of content provided by creators have exceeded my expectations. The platform truly fosters a sense of community and lifelong learning."
 	},
 	{
 		"id": "testimonial-02",
 		"name": "James L.",
 		"role": "Lifelong Learner",
-		"avatar": "/testimonials/james.webp",
+		"avatar": "/avatars/Ellipse (1).svg",
 		"quote": "I've tried several online learning platforms, and ByteSpace stands out for its vibrant community and the variety of courses available. The easy navigation and engaging content make it a go-to platform for continuous skill development."
 	},
 	{
 		"id": "testimonial-03",
 		"name": "Alex B.",
 		"role": "Inspired Creator",
-		"avatar": "/testimonials/alex.webp",
+		"avatar": "/avatars/Ellipse (2).svg",
 		"quote": "As a creator, ByteSpace has been a game-changer for me. The Course Editor is user-friendly, and the support from the community is incredible. It's fulfilling to see my courses making a positive impact on learners globally."
 	}
 ]
