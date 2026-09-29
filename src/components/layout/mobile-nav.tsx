@@ -18,9 +18,11 @@ export function MobileNav() {
 		};
 
 		document.addEventListener("keydown", handleEscape);
+		document.body.style.overflow = "hidden";
 
 		return () => {
 			document.removeEventListener("keydown", handleEscape);
+			document.body.style.overflow = "";
 		};
 	}, [isOpen]);
 
@@ -30,42 +32,65 @@ export function MobileNav() {
 				type="button"
 				aria-expanded={isOpen}
 				aria-controls="mobile-navigation"
-				aria-label={isOpen ? "Close navigation menu" : "Open navigation menu"}
-				onClick={() => setIsOpen((previous) => !previous)}
-				className="relative grid size-10 place-items-center rounded-full border border-white/20 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime"
+				aria-label="Open navigation menu"
+				onClick={() => setIsOpen(true)}
+				className="grid size-10 place-items-center rounded-full border border-white/20 text-white focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-lime"
 			>
-				{isOpen ? (
-					<FiX aria-hidden="true" size={20} />
-				) : (
-					<FiMenu aria-hidden="true" size={20} />
-				)}
+				<FiMenu aria-hidden="true" size={20} />
 			</button>
 
-			{isOpen && (
-				<nav
-					id="mobile-navigation"
-					aria-label="Mobile navigation"
-					className="absolute inset-x-5 top-19 rounded-2xl border border-white/15 bg-primary/95 p-5 shadow-2xl backdrop-blur-md sm:inset-x-6"
-				>
-					<ul className="space-y-1">
-						{NAV_LINKS.map((item) => (
-							<li key={item.href}>
-								<Link
-									href={item.href}
-									onClick={() => setIsOpen(false)}
-									className="block rounded-lg p-3 font-body text-base text-white transition-colors hover:bg-white/10"
-								>
-									{item.label}
-								</Link>
-							</li>
-						))}
-					</ul>
+			<div
+				className={`fixed inset-0 z-60 transition ${
+					isOpen
+						? "visible bg-black/40 opacity-100"
+						: "invisible bg-black/0 opacity-0"
+				}`}
+				aria-hidden={!isOpen}
+				onClick={() => setIsOpen(false)}
+			/>
 
-					<div className="mt-4 flex items-center gap-3 border-white/15 border-t pt-4">
+			<nav
+				id="mobile-navigation"
+				aria-label="Mobile navigation"
+				className={`fixed top-0 right-0 z-70 flex h-dvh w-4/5 flex-col bg-primary p-6 shadow-2xl transition-transform duration-300 ease-out ${
+					isOpen ? "translate-x-0" : "translate-x-full"
+				}`}
+			>
+				<div className="flex items-center justify-between">
+					<span className="font-logo font-semibold text-white text-xl">
+						ByteSpace
+					</span>
+
+					<button
+						type="button"
+						aria-label="Close navigation menu"
+						onClick={() => setIsOpen(false)}
+						className="grid size-10 place-items-center rounded-full border border-white/20 text-white"
+					>
+						<FiX aria-hidden="true" size={20} />
+					</button>
+				</div>
+
+				<ul className="mt-10 space-y-2">
+					{NAV_LINKS.map((item) => (
+						<li key={item.href}>
+							<Link
+								href={item.href}
+								onClick={() => setIsOpen(false)}
+								className="block rounded-xl px-4 py-3 font-body text-base text-white transition-colors hover:bg-white/10"
+							>
+								{item.label}
+							</Link>
+						</li>
+					))}
+				</ul>
+
+				<div className="mt-auto border-white/15 border-t pt-5">
+					<div className="flex gap-3">
 						<Link
 							href="/login"
 							onClick={() => setIsOpen(false)}
-							className="flex-1 rounded-full border border-white/25 px-4 py-2.5 text-center font-body text-sm text-white"
+							className="flex-1 rounded-full border border-white/25 px-4 py-3 text-center font-body text-sm text-white"
 						>
 							Sign In
 						</Link>
@@ -73,7 +98,7 @@ export function MobileNav() {
 						<Link
 							href="/register"
 							onClick={() => setIsOpen(false)}
-							className="flex-1 rounded-full bg-lime px-4 py-2.5 text-center font-body font-medium text-black text-sm"
+							className="flex-1 rounded-full bg-lime px-4 py-3 text-center font-body font-medium text-black text-sm"
 						>
 							Join Us
 						</Link>
@@ -81,17 +106,17 @@ export function MobileNav() {
 						<button
 							type="button"
 							aria-label="Shopping bag"
-							className="grid size-10 shrink-0 place-items-center rounded-full border border-white/25"
+							className="grid size-11 shrink-0 place-items-center rounded-full border border-white/25"
 						>
 							<FiShoppingBag
 								aria-hidden="true"
-								size={22}
+								size={21}
 								className="text-white"
 							/>
 						</button>
 					</div>
-				</nav>
-			)}
+				</div>
+			</nav>
 		</div>
 	);
 }
