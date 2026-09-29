@@ -6,7 +6,10 @@ import { MobileNav } from "./mobile-nav";
 
 export function Navbar() {
 	return (
-		<header className="absolute inset-x-0 top-0 z-50 h-22 lg:h-30">
+		<header
+			data-site-header
+			className="absolute inset-x-0 top-0 z-50 h-22 lg:h-30"
+		>
 			<div className="mx-auto flex size-full max-w-300 items-center justify-between px-5 sm:px-6 lg:px-0">
 				<Link
 					href="/"
@@ -21,7 +24,7 @@ export function Navbar() {
 						priority
 					/>
 
-					<span className="font-heading font-semibold text-white text-xl tracking-[-0.4px] lg:text-2xl">
+					<span className="font-logo font-semibold text-white text-xl tracking-[-0.4px] lg:text-2xl">
 						ByteSpace
 					</span>
 				</Link>

@@ -36,6 +36,11 @@ body {
 	text-rendering: optimizeLegibility;
 }
 
+body:has([data-auth-page]) > [data-site-header],
+body:has([data-auth-page]) > [data-site-footer] {
+	display: none;
+}
+
 * {
 	box-sizing: border-box;
 }
@@ -46,6 +51,10 @@ body {
 
 .font-body {
 	font-family: var(--font-satoshi), Arial, sans-serif;
+}
+
+.font-logo {
+	font-family: var(--font-clash-display), Arial, sans-serif;
 }
 
 .hero-grid {

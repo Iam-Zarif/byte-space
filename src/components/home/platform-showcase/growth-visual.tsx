@@ -18,6 +18,7 @@ export function GrowthVisual() {
 				width={722}
 				height={515}
 				sizes="(max-width: 767px) 95vw, 620px"
+				style={{ height: "auto" }}
 				className="absolute top-[5%] -left-[11%] h-auto w-[131%] max-w-none drop-shadow-2xl"
 			/>
 			<div className="absolute top-[38%] right-0 w-[39%]">

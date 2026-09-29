@@ -29,6 +29,7 @@ export function CreatorVisual() {
 				width={579}
 				height={719}
 				sizes="(max-width: 767px) 90vw, 470px"
+				style={{ height: "auto" }}
 				className="absolute -top-[2%] left-[1%] h-auto w-[88%]"
 			/>
 			<ShowcaseOrnament className="top-[18%] right-[17%]" />

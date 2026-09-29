@@ -8,6 +8,7 @@ export function ShowcaseOrnament({ className }: { className: string }) {
 			height={387}
 			sizes="(max-width: 767px) 24vw, 140px"
 			style={{
+				height: "auto",
 				filter:
 					"brightness(0) saturate(100%) invert(91%) sepia(99%) saturate(1451%) hue-rotate(14deg) brightness(109%) contrast(104%)",
 			}}

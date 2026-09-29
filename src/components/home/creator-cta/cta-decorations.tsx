@@ -65,6 +65,7 @@ export function CtaDecorations() {
 					sizes={`${ornament.width}px`}
 					className={`absolute h-auto ${ornament.className}`}
 					style={{
+						height: "auto",
 						filter: ornament.lime
 							? "brightness(0) saturate(100%) invert(91%) sepia(99%) saturate(1451%) hue-rotate(14deg) brightness(109%) contrast(104%)"
 							: ornament.white

@@ -8,7 +8,10 @@ import { NewsletterForm } from "./newsletter-form";
 
 export function Footer() {
 	return (
-		<footer className="border-gray-200 border-t bg-white px-5 pt-17.5 pb-8 sm:px-6">
+		<footer
+			data-site-footer
+			className="border-gray-200 border-t bg-white px-5 pt-17.5 pb-8 sm:px-6"
+		>
 			<div className="mx-auto max-w-300">
 				<div className="flex flex-col gap-12 lg:flex-row lg:justify-between lg:gap-0">
 					<div className="lg:w-126">
@@ -19,7 +22,7 @@ export function Footer() {
 						>
 							<Image src="/brand/favicon.svg" alt="" width={29} height={32} />
 
-							<span className="font-heading font-semibold text-2xl text-gray-950">
+							<span className="font-logo font-semibold text-2xl text-gray-950">
 								ByteSpace
 							</span>
 						</Link>
